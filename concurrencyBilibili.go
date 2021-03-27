@@ -46,7 +46,7 @@ func SwitchNum(str string) int64 {
 
 // 连接数据库
 func InitDB()*gorm.DB {
-	dsn := "root:hu20010326@tcp(127.0.0.1:3306)/bilibili?charset=utf8mb4&parseTime=True&loc=Local"
+	dsn := "root:********@tcp(127.0.0.1:3306)/bilibili?charset=utf8mb4&parseTime=True&loc=Local"
 	//DB, err := gorm.Open("mysql", dns)
 	DB, err := gorm.Open(mysql.Open(dsn), &gorm.Config{})
 	if err != nil {
